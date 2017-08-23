@@ -1,0 +1,138 @@
+ls / ls -al / ll
+touch / vim / echo > a.txt
+
+rm a.txt
+cat / head -n /tail -n
+mv a.txt b.txt
+cp a.txt b.txt
+
+vim a.txt(命令模式 插入模式 底行模式)
+a/i进入插入模式 esc进入命令模式：进入底行模式
+命令模式：dd yy p $ G1
+底行模式：wq q!
+
+目录操作
+pwd
+mkdir
+rmdir
+rm -fr
+
+git
+将远程版本控制服务器上的仓库拷贝到本地
+git clone https://git.oschina.net/mmall_meng/demo1.git
+
+提供账号和密码验证
+git status
+本地操作(新建文件)
+git add
+git commit -am 'first'
+git push
+
+需要提供账号和密码
+git config --global user.name "MengZhongShangYu"
+git congig --global user.email "1358773648@qq.com"
+
+换成SSH登录方式
+
+git clone git@git.oschina.net:mmall_meng/demo1.git
+
+ssh-keygen -t rsa -C "1358773648@qq.com"
+
+
+.gitignore配置规则，不让git管理的文件目录
+
+rm -fr demo1
+mkdir demo1
+cd demo1
+git init 
+git remote add origin git@git.oschina.net:mmall_meng/demo1.git
+git pull origin master
+
+git add .
+git commit -am 'first'
+git push
+git push --set-upsteam origin master
+
+
+开一个新的分支
+git branch
+git checkout -b demo_v1.0
+
+npm nodeJS包管理工具
+基于脚手架的项目
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+npm install webpack@1.15.0 -g
+
+npm 
+npm get prefix 获取全局安装路径
+npm install css-loader style-loader --save-dev --registry=https://regostry.npm.taobao.org
+npm install cnpm -g --registry=https://registry.npm.taobao.org
+cnpm install webpack-dev-server -g
+
+运行服务器(localhost:8080)
+webpack-dev-server --port=8000
+
+体系结构：
+nodejs->npm->webpack->
+
+web js 文件多个入口
+如何引入jquery
+1.npm install jquery --save
+requeired('jquery')
+2.npm uninstall jquery --save
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+gti init
+git config --global
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
